@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu ATM</title>
+    <!--bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="text-white container">
+    <!--Encabezado-->
+    <div id="general-box" class="d-flex justify-content-between mt-5 mx-2 mb-2">
+        <img src="image/Logo.png" class="img-fluid">        
+        <h3 class="m-0">ATM</h3>
+    </div>
+
+    <!--Seccion de operaciones-->
+    <div class="row py-5 mb-5">
+        <!--Informacion de cliente-->
+        <div class="col-4 pt-3" style="font-size: large; color: #5DB9FF">
+            <p>Bienvenido <span class="d-block text-light font-weight-bold pt-1">Diego Morataya</span></p>
+            <p>Numero de cuenta <span class="d-block text-light font-weight-bold pt-1">1234567891011</span></p>
+        </div>
+
+        <!--Controlador de acciones-->
+        <div class="col-8 d-flex flex-wrap justify-content-center align-items-center"> 
+            <button id="operation-btn" class="btn py-5 m-3">Deposito</button>
+            <button id="operation-btn" class="btn py-5 m-3">Retiro</button>
+            <button id="operation-btn" class="btn py-5 m-3">Pago</button>
+            <button id="operation-btn" class="btn py-5 m-3">Consultas</button>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="d-flex justify-content-between align-items-center p-3">
+        <div class="d-flex align-items-center">
+            <ion-icon name="call-outline" size="large" class="float-left border rounded-circle p-2 m-2"></ion-icon>
+            <div>
+                <p class="mb-0 font-weight-bold">Servicio al cliente</p>
+                <p class="mb-0">7070-1515</p>
+            </div>
+        </div>
+
+        <div>        
+            <button id="close-bottom" class="btn btn-link d-flex align-items"  style="color: #D4B01B;">
+                <span class="mx-2">Retirar tarjeta</span><ion-icon name="card" size="large"></ion-icon>
+            </button>
+        </div>
+    </div> 
+
+    <!--Ionicons script-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--Bootstrap 4 scripts-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

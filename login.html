@@ -18,7 +18,7 @@
     <div class="d-flex justify-content-center align-items-center flex-column text-center p-4">
         <h2>Ingrese su numero de PIN</h2>
 
-        <input type="password" maxlength="4" id="pin-box" class="form-control text-center mt-4 mb-2 p-3" readonly>
+        <input type="password" maxlength="4" id="number-box" class="form-control text-center mt-4 mb-2 p-3" readonly>
 
         <div style="width: 100%; max-width: 250px"> <!-- Teclado numerico -->            
             <button id="keyboard" class="btn btn-link rounded-circle py-3 px-4 m-2">1</button>
@@ -34,10 +34,10 @@
             <button id="keyboard" class="btn rounded-circle py-3 px-4 m-2">0</button>           
         </div>
 
-        <div class="control-box"> <!-- Controlador de acciones -->
-            <button>cancel</button>
-            <button>clear</button> 
-            <button>enter</button>
+        <div class="flex-wrap pt-4"> <!-- Controlador de acciones -->
+            <button id="action-btn" class="btn m-2">cancel</button>
+            <button id="action-btn" class="btn m-2">clear</button> 
+            <button id="action-btn" class="btn m-2">enter</button>
         </div>        
     </div>
 

@@ -6,11 +6,16 @@ h2{
     color: #D4B01B;
 }
 
+h4{
+    color: #363B81;
+    font-size: 1.25rem;
+}
+
 #general-box{
     height: 70px;
 }
 
-#pin-box{
+#number-box{
     background-color: #5DB9FF;
     border: 3px solid #fff;
     border-radius: 10px;
@@ -19,14 +24,45 @@ h2{
     font-size: 2rem;    
 }
 
-#keyboard{
-    background-color: #363B81;
-    border: 2px solid #fff;
-    color: #fff;    
+#information-box{
+    background-color: #5DB9FF;
+    color: white;
+    width: 70%;
 }
 
 #close-bottom{
     background-color: #363B81;
     font-size: 125%;
     text-decoration: underline;
+}
+
+/*Diseño de ventana log-in*/
+
+#keyboard{
+    background-color: #363B81;
+    border: 2px solid #fff;
+    color: #fff;    
+}
+
+#action-btn{
+    background-color: #D4B01B;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 100px;
+    flex: 1 1 28%;
+    width: 150px;
+}
+
+/*Diseño de ventana menu*/
+#operation-btn{
+    background-color: #5DB9FF;
+    text-transform: uppercase;
+    color: #363B81;
+    font-size: 1.75rem;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #fff;
+    min-width: 200px;
+    width: 40%;
 }
