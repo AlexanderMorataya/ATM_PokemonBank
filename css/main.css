@@ -30,14 +30,54 @@ h4{
     width: 70%;
 }
 
+/*Diseño de ventanas de busqueda de cuentas o tarjetas*/
+#search-box{
+    margin-top: 7%;
+    margin-bottom: 20%;
+}
+
+/*Diseño de boton de retirar tarjeta, cerra programa*/
 #close-bottom{
     background-color: #363B81;
     font-size: 125%;
     text-decoration: underline;
 }
 
-/*Diseño de ventana log-in*/
+/*Diseño de pagina de cierre*/
+#confirmation-text{
+    color: #D4B01B;
+    margin: 15%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
+/*Diseño de botones de desplazamiento*/
+#return-btn{
+    background-color: #D4B01B;
+    color: #fff;
+    font-size: 1.5rem;    
+    width: 25%;
+    min-width: 210px;    
+}
+
+#continue-btn{
+    background-color: #5DB9FF;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25%;
+    min-width: 210px;
+}
+
+/*Diseño de imagenes de ejempo*/
+#img-presentation{
+    width: 35%;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+/* ------------------DISEÑO POR VENTANA----------------------*/
+
+/*Diseño de ventana log-in*/
 #keyboard{
     background-color: #363B81;
     border: 2px solid #fff;
