@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit ATM</title>
-    <!--bootstrap 4--> 
+    <title>Payment ATM</title>
+    <!--bootstrap 4-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--custom css-->
     <link rel="stylesheet" href="css/main.css">
@@ -15,11 +15,23 @@
         <img src="image/Logo.png" class="img-fluid">        
         <h3 class="m-0">ATM</h3>
     </div>
+    
+    <!--Seleccion de servicios a pagar-->
+    <div class="text-center">
+        <h2 style="font-size: 1.5rem;" class="mt-4 mb-5">Centro de pagos</h2>
+        <div class="col-12 d-flex flex-wrap justify-content-center align-items-center"> 
+            <button id="operation-btn" class="btn py-5 m-3">Tarjetas</button>
+            <button id="operation-btn" class="btn py-5 m-3">Servicios</button>
+            <button id="return-btn-2" class="btn py-5 m-3"><ion-icon name="chevron-back-outline" class="mr-5"></ion-icon> Regresar</button>
+            <button id="operation-btn" class="btn py-5 m-3">Prestamos</button>
+        </div>
+    </div>
 
-    <!--Busqueda de cuenta a depositar-->
+    <!--Busqueda de tarjeta/cuenta a pagar-->
+    <!--
     <div class="text-center mt-3">
         <div id="search-box">
-            <h2 style="font-size: 1.5rem;">Deposite el numero de cuenta al que desea depositar</h2>
+            <h2 style="font-size: 1.5rem;">Deposite el numero de tarjeta</h2>
              <input type="text" maxlength="16" id="number-box" class="form-control text-center mt-4 mb-2 mx-auto p-1">
         </div>
         <div class="d-flex justify-content-between align-items-center mt-5 pt-4">
@@ -27,35 +39,69 @@
             <button id="continue-btn" class="btn d-flex align-items-center justify-content-end py-3 px-3 m-3"> Continuar <ion-icon name="chevron-forward-outline" class="ml-5"></ion-icon> </button>
         </div>
     </div>
+    -->
 
-    <!--Ingreso de monto a depositar-->
+    <!--Seleccion de cuenta de banco usada para pagar-->
     <!--
     <div class="text-center mt-3">
         <div id="information-box" class="rounded my-5 mx-auto px-5 pb-3">
-            <h4 class="py-4">Datos de la cuenta</h4>
+            <h4 class="py-4">Datos de la tarjeta</h4>
             <div class="text-left" style="font-size: 1.05rem">
                 <p>Numero de cuenta: **** **** **** 0000</p>
                 <p>Pertenece a: Diego Alexander Lopez Morataya</p>
-                <p>Moneda: Dolares</p>
             </div>
         </div>
-        <h2 style="font-size: 1.5rem;">Digite el monto a depositar</h2>
+        <h2 style="font-size: 1.5rem;">Ingrese la cuenta de origen para procesar el pago</h2>
         <input type="text" maxlength="3" id="number-box" class="form-control text-center mt-4 mb-2 mx-auto p-2">
         <div class="d-flex justify-content-between align-items-center mt-5 pt-4">
-            <button id="continue-btn" class="btn py-3 px-3 mx-3">Nueva cuenta</button>
+            <button id="continue-btn" class="btn py-3 px-3 mx-3">Nueva tarjeta</button>
         </div>
         <div class="d-flex justify-content-between align-items-center pt-4">
             <button id="return-btn"   class="btn d-flex align-items-center py-3 px-3 mx-3"> <ion-icon name="chevron-back-outline" class="mr-5"></ion-icon> Salir</button>
-            <button id="continue-btn" class="btn d-flex align-items-center justify-content-end py-3 px-3 mx-3"> Continuar <ion-icon name="chevron-forward-outline" class="ml-5"></ion-icon> </button>
+            <button id="continue-btn" class="btn d-flex align-items-center justify-content-end py-3 px-3 mx-3"> Pagar <ion-icon name="chevron-forward-outline" class="ml-5"></ion-icon> </button>
         </div>
     </div>
     -->
 
-    <!--Deposito de efectivo-->
+    <!--Caso especial: Seleccion de prestamo a pagar-->
     <!--
     <div class="text-center mt-3">
-        <h2 style="font-size: 1.5rem;">Deposite el efectivo del compartimiento</h2>
-        <img src="image/get-cash.jpg" id="img-presentation" class="img-fluid mt-4">
+        <h2 style="font-size: 1.5rem;" class="mt-4 mb-3">Seleccione el monto a pagar</h2>
+        <div class="row">
+            <div class="col-8 text-left">
+                <div id="information-box" class="w-100 rounded my-2 mx-3 px-5 pb-2">
+                    <h4 class="pt-2">Prestamo de auto: 00000000</h4>
+                    <p>$20,000</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <button id="continue-btn" class="btn w-100 my-2 mr-3 py-4">Pagar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 text-left">
+                <div id="information-box" class="w-100 rounded my-2 mx-3 px-5 pb-2">
+                    <h4 class="pt-2">Prestamo de casa: 00000000</h4>
+                    <p>$150,000</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <button id="continue-btn" class="btn w-100 my-2 mr-3 py-4">Pagar</button>
+            </div>
+        </div>
+        <div class="d-flex pt-5">
+            <button id="return-btn" class="btn d-flex align-items-center py-3 px-3 m-3"> <ion-icon name="chevron-back-outline" class="mr-5"></ion-icon> Regresar</button>
+        </div>
+    </div>
+    -->
+
+    <!--Ingreso de monto a pagar-->
+    <!--
+    <div class="text-center mt-3">
+        <div id="search-box">
+            <h2 style="font-size: 1.5rem;">Ingrese el monto a pagar</h2>
+             <input type="text" maxlength="16" id="number-box" class="form-control text-center mt-4 mb-2 mx-auto p-1">
+        </div>
         <div class="d-flex justify-content-between align-items-center mt-5 pt-4">
             <button id="return-btn"   class="btn d-flex align-items-center py-3 px-3 m-3"> <ion-icon name="chevron-back-outline" class="mr-5"></ion-icon> Regresar</button>
             <button id="continue-btn" class="btn d-flex align-items-center justify-content-end py-3 px-3 m-3"> Continuar <ion-icon name="chevron-forward-outline" class="ml-5"></ion-icon> </button>
@@ -63,7 +109,7 @@
     </div>
     -->
 
-    <!--Confirmacion de deposito-->
+    <!--Confirmacion de pago-->
     <!--
     <div class="text-center">
         <div id="confirmation-text">

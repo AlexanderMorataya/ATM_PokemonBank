@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance ATM</title>
+    <!--bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="text-white container">
+    <div id="general-box" class="d-flex justify-content-between mt-5 mx-2 mb-2">
+        <img src="image/Logo.png" class="img-fluid">        
+        <h3 class="m-0">ATM</h3>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column text-center p-4">
+        <h2>Historial de cuenta</h2> 
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <div id="information" class="rounded">
+                <h4>Datos de la cuenta</h4>
+                <p><strong>Num. de cuenta:</strong></p>
+                <p><strong>Saldo actual:</strong></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+        <div id="history-box" class="table-box">
+        <div class="table-responsive">
+                    <table class="history-table table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Transacciones realizadas</th>
+                                <th>Monto</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transaction-history">
+                            <!-- Aquí se insertarán las filas mediante JS -->
+                        </tbody>
+                    </table>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Ionicons script-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--Bootstrap 4 scripts-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
